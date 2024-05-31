@@ -13,7 +13,7 @@ RR_MIN, RR_MAX = 5, 30  # Bounds for the reserve ratio
 
 # Load the data
 st.title("Monetary Policy Optimization and Simulation")
-data = pd.read_csv('data\\rates.csv')
+data = pd.read_csv("rates.csv")
 
 # Extract relevant columns from data
 X = data[['base_rate', 'interbank_rate', 'reserve', 'exchange_rate', '10_year_minus_3_year']]
