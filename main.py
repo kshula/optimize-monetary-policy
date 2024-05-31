@@ -22,7 +22,7 @@ y_lending_rate = data['lending_rate']
 y_exchange_rate = data['exchange_rate']
 
 # Plot inflation using Plotly
-fig = px.line(data, x=data['Date'], y=['inflation', 'base_rate'], title='Inflation Over Time')
+fig = px.line(data, x=data['Date'], y=['inflation', 'base_rate', 'reserve'], title='Inflation Over Time')
 st.plotly_chart(fig)
 
 # Get the latest lending rate
